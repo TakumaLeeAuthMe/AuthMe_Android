@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.authme.sdk.sample.compare.CompareActivity">
+
+    <TextView
+        android:id="@+id/txt_compare1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comparing card 1 &amp; face...." />
+
+    <TextView
+        android:id="@+id/txt_compare2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comparing card 2 &amp; face...." />
+
+    <TextView
+        android:id="@+id/txt_compare3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comparing card1 &amp; card 2..." />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
