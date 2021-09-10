@@ -54,18 +54,15 @@ class MainViewModel : ViewModel() {
         viewModelScope.launch {
             showLoading.postValue(true)
             var token: String = ""
-            while (true) {
-                try {
-                    Timber.d("customerID: ${customerId.value}")
-                    token = repository.getToken(
-                            clientID = clientId,
-                            secret = clientSecret,
-                            customerID = customerId.value!!
-                    )
-                    break
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
+            try {
+                Timber.d("customerID: ${customerId.value}")
+                token = repository.getToken(
+                    clientID = clientId,
+                    secret = clientSecret,
+                    customerID = customerId.value!!
+                )
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
 
             AuthMe.init(APP.instance, token) {
