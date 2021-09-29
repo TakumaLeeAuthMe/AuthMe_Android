@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidSDK">
         <activity
+            android:name="com.authme.sdk.sample.ocr.OCRResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.authme.sdk.sample.main.MainActivity"
             android:screenOrientation="portrait"
             android:exported="true">

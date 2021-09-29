@@ -47,14 +47,10 @@ dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.aar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
     implementation 'androidx.drawerlayout:drawerlayout:1.1.0'
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
-    implementation "androidx.core:core-ktx:1.6.0"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-alpha02"
     implementation "androidx.preference:preference-ktx:1.1.1"
-
-    implementation 'com.google.android.material:material:1.2.1'
 
     implementation "androidx.work:work-runtime:${work_manager_version}"
     implementation "androidx.work:work-runtime-ktx:${work_manager_version}"
@@ -70,11 +66,17 @@ dependencies {
     //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
 
     implementation 'org.apache.commons:commons-math3:3.6.1'
-    implementation 'androidx.appcompat:appcompat:1.3.0'
 
     implementation "com.airbnb.android:epoxy:${airbnb_version}"
     kapt "com.airbnb.android:epoxy-processor:${airbnb_version}"
     implementation 'com.afollestad.material-dialogs:core:3.3.0'
+
+    // default
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    // -- default end --
 
     // requirement
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines_version}"
