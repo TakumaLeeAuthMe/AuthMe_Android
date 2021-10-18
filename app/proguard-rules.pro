@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.authme.lib.network.** { *; }
+-keep class com.authme.lib.common.** { *; }
+-keep class com.authme.library.ocr.network.** { *; }
+-keep class com.authme.library.liveness.** { *; }
